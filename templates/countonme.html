@@ -1,4 +1,5 @@
 {% extends "_base.html" %}
+{% import "_macros.html" as macros %}
 
 
 {% block header %}
@@ -64,15 +65,8 @@
 <article class="mw8 center cf ph2">
 	<h1 class="f4 small-caps orange tracked">Screenshots</h1>
 	<div class="tc">
-	{% for asset in ["ss2.png", "ss4.png", "ss3.png", "ss1.png", "ss6.png", "ss5.png"] -%}
-	  {%- if asset is matching("[.](jpg|png)$") -%}
-	    {% set image = resize_image(path="countonme/" ~ asset, width=256, height=456) %}
-	    <a href="{{ get_url(path='countonme/' ~ asset) }}" target="_blank">
-	      <img src="{{ image.url }}" class="pa3" />
-	    </a>
-	  {%- endif %}
-	{%- endfor %}
-</div>
+		{{ macros::image_gallery(path="countonme/", imgs=["ss2.png", "ss4.png", "ss3.png", "ss1.png", "ss6.png", "ss5.png"]) }}
+	</div>
 </article>
 </section>
 
