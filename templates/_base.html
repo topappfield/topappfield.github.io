@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ config.default_language | default(value='en-US') }}">
 
-
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
 {# <link rel="stylesheet" href="{{ get_url(path='tachyons.min.css') }}"> #}
 {# <link rel="stylesheet" href="{{ get_url(path='style.css') }}"> #}
-<link rel="stylesheet" href="tachyons.min.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/css/tachyons.min.css">
+<link rel="stylesheet" href="/css/style.css">
 
-
-<title>{{ section.title }} - TopAppField</title>
+<title>
+	{% if section.title %} {{ section.title - TopAppField }}
+	{% else %} TopAppField {% endif%}
+</title>
 </head>
 
 
@@ -23,7 +23,6 @@
 {% block header %} {% endblock header %}
 
 {% block main %} {% endblock main %}
-
 
 <footer class="ma0 mt7 footer-bg-color">
 {% block footer %} {% endblock footer %}
@@ -35,6 +34,5 @@
 </footer>
 
 </body>
-
 
 </html>
