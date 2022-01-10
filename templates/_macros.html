@@ -1,0 +1,10 @@
+{% macro image_gallery(path, imgs) %}
+	{% for asset in imgs -%}
+	  {%- if asset is matching("[.](jpg|png)$") -%}
+	    {% set image = resize_image(path=path ~ asset, width=256, height=456) %}
+	    <a href="{{ get_url(path=path ~ asset) }}" target="_blank">
+	      <img src="{{ image.url }}" class="pa3" />
+	    </a>
+	  {%- endif %}
+	{%- endfor %}
+{% endmacro %}
