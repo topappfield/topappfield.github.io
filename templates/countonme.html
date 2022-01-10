@@ -1,0 +1,83 @@
+{% extends "_base.html" %}
+
+
+{% block header %}
+<header class="pv5 bg-light-green">
+<article class="tc">
+	<img src="{{ section.path }}icon.png" class="br-100 pa1 ba b--black-10 h4 w4" alt="Count On Me">
+	<h1 class="f1 f1-ns mid-gray mb0 dark-green">Count On Me</h1>
+	<h2 class="f3 gray fw2 tracked mt1">{{ section.description }}</h2>
+</article>
+</header>
+{% endblock header %}
+
+
+{% block main %}
+
+
+<section class="pv5 tc">
+	<img src="countonme/banner.png">	
+</section>
+
+
+{% include "shortcodes/installapp.html" %}
+
+
+<section class="pv4 bg-washed-yellow">
+<article class="mw8 center cf ph2">
+	<h1 class="f4 small-caps orange tracked">Features</h1>
+	<div class="fl w-100-m w-50-ns h4 pa2">
+		<h1 class="f3 gold">Privacy-first app</h1>
+		<p class="dark-gray">Your data is stored only on your phone and remains there. Nothing is transfered to the internet except if you export your data on your own.</p>
+	</div>
+	<div class="fl w-100 w-50-ns h4 pa2">
+		<h1 class="f3 gold">Free of ads</h1>
+		<p class="dark-gray">There are no ads in the app. No bandwidth stealing and no delays due to ad loading. Your focus stays on counting.</p>
+	</div>
+
+	<div class="fl w-100 w-50-ns h4 pa2">
+		<h1 class="f3 gold">Full customizable</h1>
+		<p class="dark-gray">Create many different types of counters and organize them using tags. Set counter label, color, icon, sound, description, etc.</p>
+	</div>
+	<div class="fl w-100 w-50-ns h4 pa2">
+		<h1 class="f3 gold">Various effects available</h1>
+		<p class="dark-gray">Notification of counter change via feedback such as sound effect, phonelight flash, screen flash, vibration etc.</p>
+	</div>
+
+	<div class="fl w-100 w-50-ns h4 pa2">
+		<h1 class="f3 gold">Rich data and statistics</h1>
+		<p class="dark-gray">See details of your counters. Follow your progress with graphical progress bar. Compare increments and decrements with pie chart.</p>
+	</div>
+	<div class="fl w-100 w-50-ns h4 pa2">
+		<h1 class="f3 gold">Advanced features</h1>
+		<p>Reset counter and log changes. Lock counter. Export and import counter data.</p>
+	</div>
+	<div class="fl w-100 w-100-ns h4 pa2">
+		<h1 class="f3 gold">Freemium and Premium</h1>
+		<p>All features and functionalities are freely available in the basic version. However, you may support our efforts by buying Premium version - one time payment for a lifetime. Thank you in advance.</p>
+	</div>
+</article>
+</section>
+
+
+<section class="pv4 bg-washed-blue">
+<article class="mw8 center cf ph2">
+	<h1 class="f4 small-caps orange tracked">Screenshots</h1>
+	<div class="tc">
+	{% for asset in ["ss2.png", "ss4.png", "ss3.png", "ss1.png", "ss6.png", "ss5.png"] -%}
+	  {%- if asset is matching("[.](jpg|png)$") -%}
+	    {% set image = resize_image(path="countonme/" ~ asset, width=256, height=456) %}
+	    <a href="{{ get_url(path='countonme/' ~ asset) }}" target="_blank">
+	      <img src="{{ image.url }}" class="pa3" />
+	    </a>
+	  {%- endif %}
+	{%- endfor %}
+</div>
+</article>
+</section>
+
+
+{% include "shortcodes/installapp.html" %}
+
+
+{% endblock main %}
