@@ -1,40 +1,69 @@
 {% extends "_base.html" %}
 
+{% block navbar %}
+{% endblock navbar %}
+
+
 {% block header %}
-<header class="pb5">
-<section class="mw9 relative center">
-	<img src="imgs/banner.png" class="mw-100 mw-100-ns pa0" alt="TopAppField">
-	<div class="bg-washed-green ba br2 b--green bottom-centered pv3 ph3 w-70 tc">
-		<h1 class="f2 f2-ns fw5 tracked dark-green">TOP apps for TOP people</h1>
+<header class="clearfix bg-success bg-opacity-10">
+<div class="container-xl p-0 mb-5 center text-center position-relative">
+	<img class="img-fluid mw-100" src="imgs/banner.png" alt="TopAppField">
+	<div class="w-60 position-absolute top-100 start-50 translate-middle">
+		<h1 class="p-4 m-0 mb-5 alert alert-warning border-success display-6 lead" role="alert">TOP apps for TOP people</h1>
 	</div>
-</section>
+</div>
 </header>
 {% endblock header %}
 
 
 {% block main %}
 <main>
-<section class="tc">
-	<h1 class="f1 f1-ns dark-green">Our apps</h1>
+
+<section class="text-center">
+	<h1 class="">Our apps</h1>
 </section>
 
-<article class="mw7 h5 pa3 pa4-ns center v-mid bg-white br3 ba b--light-green">
-	<a href="countonme">
-	<div class="fl w-third">
-		<img src="countonme/icon.png" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Count On Me">
+<article class="container my-5">
+	<div class="card w-75 mx-auto p-4 border-success">
+		<div class="row">
+			<div class="col-sm col-md-3 text-center">
+				<img class="border rounded-circle" src="countonme/icon.png" title="Count On Me">
+			 </div>
+			<div class="col-sm col-md-9">
+				<h1 class="mt-0 mb-1">Count On Me</h1>
+				<p class="text-muted">The ultimate app for counting anything.</p>
+				<a class="btn btn-primary stretched-link" href="countonme">Go and check it</a>
+			</div>
+		</div>
 	</div>
-	<div class="fl w-two-thirds">
-		<h1 class="f3 mb2 dark-green">Count On Me</h1>
-		<h2 class="f5 fw4 gray">The ultimate app for counting everything.</h2>
-	</div>
-	</a>
 </article>
+
+<article class="container my-5">
+	<div class="card w-75 mx-auto p-4 border-success">
+		<div class="row">
+			<div class="col-sm col-md-3 text-center">
+				<img class="border rounded-circle" src="countonme/icon.png" title="Torcher">
+			 </div>
+			<div class="col-sm col-md-9">
+				<h1 class="mt-0 mb-1">Torcher</h1>
+				<p class="text-muted">The ultimate app for counting anything.</p>
+				<a class="btn btn-primary stretched-link" href="countonme">Go and check it</a>
+			</div>
+		</div>
+	</div>
+</article>
+
 </main>
 {% endblock main %}
 
 
 {% block footer %}
-<section class="tc pa4">
-TODO: Privacy policy, About us
-</section>
+<footer class="container-fluid bg-success bg-opacity-10">
+{#	<section class="tc pa4">
+		<a href="about">About</a>
+		<a href="privacy-policy">Privacy policy</a>
+	TODO: Privacy policy, About us
+	</section>
+#}
+</footer>
 {% endblock footer %}

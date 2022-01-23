@@ -1,5 +1,7 @@
+{% import "_macros.html" as macros %}
+
 <!DOCTYPE html>
-<html lang="{{ config.default_language | default(value='en-US') }}">
+<html class="h-100" lang="{{ config.default_language | default(value='en-US') }}">
 
 <head>
 <meta charset="utf-8">
@@ -8,29 +10,34 @@
 
 {# <link rel="stylesheet" href="{{ get_url(path='tachyons.min.css') }}"> #}
 {# <link rel="stylesheet" href="{{ get_url(path='style.css') }}"> #}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 <link rel="stylesheet" href="/css/tachyons.min.css">
 <link rel="stylesheet" href="/css/style.css">
 
 <title>
 	{% if section.title %} {{ section.title }} - TopAppField
+  {% elif page.title %} {{ page.title }} - TopAppField
 	{% else %} TopAppField {% endif%}
 </title>
 </head>
 
 
-<body class="helvetica bg-near-white">
+<body class="helvetica d-flex flex-column h-100">
+
+{% block navbar %} {% endblock navbar %}
 
 {% block header %} {% endblock header %}
 
 {% block main %} {% endblock main %}
 
-<footer class="ma0 mt7 footer-bg-color">
 {% block footer %} {% endblock footer %}
-<section class="tc pa4">
-	<img src="/imgs/logo.png" class="h3 w3 br-100 pa1 ba b--black-10" alt="TopAppField">
-	<h1 class="dark-green ma0">TopAppField</h1>
-	<p class="tc gray ">© 2021 – 2022 Copyright TopAppField. All rights reserved. Various trademarks held by their respective owners.</p>
-</section>
+
+<footer class="footer mt-auto p-5 text-center bg-success bg-opacity-25 bg-gradient">
+  <img src="/imgs/logo.png" class="border rounded-circle border-light p-1" style="width: 128px" alt="TopAppField">
+  <h1 class="m-1">TopAppField</h1>
+  <small class="text-muted">© 2021 – 2022 Copyright TopAppField. All rights reserved. Various trademarks held by their respective owners.</small>
 </footer>
 
 </body>

@@ -1,3 +1,35 @@
+body {
+  background-color: #f8fff8;
+}
+
+.text-smallcaps {
+  font-variant: small-caps;
+}
+
+.text-tracked {
+  letter-spacing:.1em
+}
+
+
+.topbar-bg {
+  background-color: #eecc77;
+}
+
+.topbar-fg {
+  color: #ee6633;
+}
+
+.topheader-bg {
+  background-color: #eeffcc;
+  letter-spacing:.1em
+}
+
+.topheader-fg {
+  color: #11aa22;
+}
+
+
+
 .bottom-centered {
   position: absolute;
   left: 50%;
@@ -6,5 +38,9 @@
 }
 
 .footer-bg-color {
-  background-color: #e0f0e0;
+  background-color: #d0e0d0;
+}
+
+.gray {
+  color: #777777;  
 }
