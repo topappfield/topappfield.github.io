@@ -1,31 +1,17 @@
 {% extends "_base.html" %}
 
 {% block navbar %}
-<section class="py-1 topbar-bg">
-	<div class="container">
-		<div class="d-flex flex-column flex-md-row align-items-center">
-			<a href="/" class="d-flex align-items-center text-decoration-none topbar-fg">
-				<img src="/imgs/logo.png" class="w-20 p-1 border rounded-circle" alt="TopAppField logo"></img>  
-				<span class="fs-5 ps-2">TopAppField</span>
-			</a>
-			<nav class="d-inline-flex ms-md-auto">
-				<a class="me-3 py-2 text-dark text-decoration-none" href="/countonme">Count On Me</a>
-				<a class="me-3 py-2 text-dark text-decoration-none" href="/torcher">Torcher</a>
-				<a class="me-3 py-2 text-dark text-decoration-none" href="/support">Support</a>
-				<a class="py-2 text-dark text-decoration-none" href="/about">About</a>
-			</nav>
-		</div>
-	</div>
-</section>
+{{ macros::navbar() }}
 {% endblock navbar %}
 
 
 {% block header %}
-<header class="py-5 topheader-bg">
-	<article class="container text-center">
-		<img src="{{ section.path }}icon.png" class="w-15 p-1 border rounded-circle" alt="Count On Me">
-		<h1 class="fs-1 mb-1 topheader-fg">Count On Me</h1>
-		<h2 class="fs-4 text-secondary fw-light">{{ section.description }}</h2>
+<div class="py-5"></div>
+<header class="py-3">
+	<article class="container p-5 w-75 text-center top-header border rounded">
+		<img src="{{ section.path }}icon.png" class="w-15 p-1 border rounded-circle border-success" alt="Count On Me">
+		<h1 class="fs-1 mt-3 mb-1 top-header">Count On Me</h1>
+		<h2 class="fs-4 fw-light text-tracked">A counter app with many options, advanced features, statistics, and various methods of counting.</h2>
 	</article>
 </header>
 {% endblock header %}
@@ -33,21 +19,29 @@
 
 {% block main %}
 <section class="py-5">
+	<div class="py-5"></div>
 	<article class="container text-center">
-		<img class="w-90" src="/countonme/banner.png">	
+		<img class="w-100 img-fluid" src="/countonme/banner.png">	
 	</article>
+	<div class="py-5"></div>
 </section>
 
-{% include "shortcodes/installapp.html" %}
 
-<section class="py-4 bg-warning bg-opacity-10">
+<section class="py-5">
+{{ macros::install_countonme() }}
+</section>
+
+
+<section class="py-5 bg-warning bg-opacity-10">
+	<div class="py-2"></div>
 	<article class="container">
-		<h1 class="text-danger text-smallcaps text-tracked">Features</h1>
+		<h1 class="text-danger text-smallcaps text-tracked mb-3">Features</h1>
 		<div class="row row-cols-1 row-cols-md-2 g-4">
 			<div class="col">
 				<div class="card p-2 h-100">
 					<h3 class="text-warning">Privacy-first app</h3>
-					<p class="text-muted">Your data is stored only on your phone and remains there. Nothing is transfered to the internet except if you export your data on your own.</p>
+					<p class="text-muted">Your data is stored only on your phone and remains there. Nothing is transfered to the internet except if you export your data on your own.
+						Check our <a href="countonme/privacy-policy">privacy policy</a>.</p>
 				</div>
 			</div>
 			<div class="col">
@@ -82,24 +76,30 @@
 			</div>
 		</div>
 		<div class="card p-2 h-100 mt-4">
-			<h3 class="text-warning">Freemium and Premium</h3>
+			<h3 class="text-warning">Free an premium</h3>
 			<p class="text-muted">All features and functionalities are freely available in the basic version. However, you may support our efforts by buying Premium version - one time payment for a lifetime. Thank you in advance.</p>
 		</div>
 	</article>
+	<div class="py-4"></div>
 </section>
 
 
-<section class="py-4 bg-info bg-opacity-10">
+<section class="py-5">
+	<div class="py-2"></div>
 	<article class="container">
-		<h1 class="text-danger text-smallcaps text-tracked">Screenshots</h1>
+		<h1 class="text-danger text-smallcaps text-tracked mb-3">Screenshots</h1>
 		<div class="text-center">
 			{{ macros::image_gallery(path="countonme/", imgs=["ss2.png", "ss4.png", "ss3.png", "ss1.png", "ss6.png", "ss5.png"]) }}
 		</div>
 	</article>
+	<div class="py-5"></div>
 </section>
 
 
-{% include "shortcodes/installapp.html" %}
+<section class="py-5">
+{{ macros::install_countonme() }}
+<div class="pb-5"></div>
+</section>
 
 
 {% endblock main %}

@@ -1,9 +1,54 @@
+{% macro navbar() %}
+<section class="top-navbar fixed-top py-2">
+	<div class="container">
+		<div class="d-flex flex-column flex-md-row align-items-center">
+			<a href="/" class="top-navbar-item d-flex align-items-center">
+				<img src="/imgs/logo.png" class="p-1 border rounded-circle border-light" style="width: 60px" alt="TopAppField logo"></img>  
+				<span class="fs-4 ps-2">TopAppField</span>
+			</a>
+			<nav class="d-inline-flex ms-md-auto">
+				<a class="top-navbar-item me-4 py-2" href="/countonme">Count On Me</a>
+{#
+				<a class="top-navbar-item me-4 py-2" href="/torcher">Torcher</a>
+				<a class="top-navbar-item me-4 py-2" href="/support">Support</a>
+#}
+				<a class="top-navbar-item py-2" href="/about">About</a>
+			</nav>
+		</div>
+	</div>
+</section>
+<div class="py-4 topheader-bg">
+</div>
+{% endmacro %}
+
+
+{% macro install_countonme() %}
+<section class="container">
+	<div class="alert alert-info w-75 p-4 mx-auto">
+	  <div class="row">
+	    <div class="col-md-8 col-12 text-center">
+	      <h2 class="text-primary">
+	        {{ caption | default(value='Want to count something?') }}
+	      </h2>
+	      <p class="text-muted">
+	        Count On Me Counter app for Android OS is easily available for you to install in the Google Play store.
+	      </p>
+	    </div>
+	    <div class="col-md-4 col-12 d-flex">
+	        <a class="btn btn-primary m-auto" href="https://play.google.com/store/apps/details?id=com.topappfield.CountOnMe">Install from Google Play store</a>
+	    </div>
+	  </div>
+	</div>
+</section>
+{% endmacro %}
+
+
 {% macro image_gallery(path, imgs) %}
 	{% for asset in imgs -%}
 	  {%- if asset is matching("[.](jpg|png)$") -%}
 	    {% set image = resize_image(path=path ~ asset, width=256, height=456) %}
 	    <a href="{{ get_url(path=path ~ asset) }}" target="_blank">
-	      <img src="{{ image.url }}" class="pa3" />
+	      <img src="{{ image.url }}" class="p-5" />
 	    </a>
 	  {%- endif %}
 	{%- endfor %}

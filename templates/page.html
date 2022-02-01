@@ -1,26 +1,12 @@
 {% extends "_base.html" %}
 
 {% block navbar %}
-<section class="py-1 topbar-bg">
-	<div class="container">
-		<div class="d-flex flex-column flex-md-row align-items-center">
-			<a href="/" class="d-flex align-items-center text-decoration-none topbar-fg">
-				<img src="/imgs/logo.png" class="w-20 p-1 border rounded-circle" alt="TopAppField logo"></img>  
-				<span class="fs-5 ps-2">TopAppField</span>
-			</a>
-			<nav class="d-inline-flex ms-md-auto">
-				<a class="me-3 py-2 text-dark text-decoration-none" href="/countonme">Count On Me</a>
-				<a class="me-3 py-2 text-dark text-decoration-none" href="/torcher">Torcher</a>
-				<a class="me-3 py-2 text-dark text-decoration-none" href="/support">Support</a>
-				<a class="py-2 text-dark text-decoration-none" href="/about">About</a>
-			</nav>
-		</div>
-	</div>
-</section>
+{{ macros::navbar() }}
 {% endblock navbar %}
 
 
 {% block header %}
+<div class="py-4"></div>
 {% endblock header %}
 
 

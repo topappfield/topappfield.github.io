@@ -1,5 +1,6 @@
 body {
-  background-color: #f8fff8;
+  color: #507000;
+  background-color: #f4fff8;
 }
 
 .text-smallcaps {
@@ -10,37 +11,56 @@ body {
   letter-spacing:.1em
 }
 
-
-.topbar-bg {
-  background-color: #eecc77;
+.top-navbar {
+  background: #f1c453;
+  background: linear-gradient(0deg, #f4fff8 0%, #e0f0d0 10%, #f0e080 80%, #f0e080 100%);
 }
 
-.topbar-fg {
-  color: #ee6633;
+.top-navbar-item {
+  color: #a06020;
+  text-decoration: none;
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  /* ...and now for the proper property */
+  transition:.3s;
+  letter-spacing:.1em;
 }
 
-.topheader-bg {
-  background-color: #eeffcc;
-  letter-spacing:.1em
+.top-navbar-item:hover {
+  color: #60a020;
 }
 
-.topheader-fg {
-  color: #11aa22;
+.top-header {
+  background-color: #f4ffc0;
+}
+
+.top-header h1 {
+  color: #40a010;
+}
+
+.top-header h2 {
+  color: #70b070;
 }
 
 
-
-.bottom-centered {
-  position: absolute;
-  left: 50%;
-  bottom: -32px;
-  transform: translate(-50%, 0%);
+blockquote {
+  background: #e4ffe8;
+  margin: 1.5em 0px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
 }
 
-.footer-bg-color {
-  background-color: #d0e0d0;
+blockquote:before {
+  color: #a0c080;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
 }
 
-.gray {
-  color: #777777;  
+blockquote p {
+  display: inline;
 }
