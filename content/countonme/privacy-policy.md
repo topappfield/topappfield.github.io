@@ -11,4 +11,4 @@ template = "page.html"
 
 Count On Me Counter app gives gives high priority to the **protection of your personal information and data**. This Privacy Policy explains how we collect, use and share information that you may provide us with while using our application or website.
 
-Count On Me Counter app requires access to the **local storage** of your device for storing the data of counters such as counter name and value. Count On Me Counter app may require access to **phone sensors** such as acceleration and current position in order to provide full functionality. The data is only stored locally **on your phone** and is **never transferred** over to us or a third party.
+Count On Me Counter app requires access to the **local storage** of your device for storing the data of counters such as counter name and value. Count On Me Counter app may require access to **phone sensors** such as acceleration and current position in order to provide full functionality. The data is only stored locally **on your phone** and is **never transferred** over the network to us or a third party.

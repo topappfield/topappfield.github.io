@@ -23,12 +23,12 @@ It's great fun to make apps and it includes many pleasing activities such as pro
 Nevertheless, the whole process is, generally, really an enjoyable experience.
 And, that's a good thing, right? [Indeed](https://memegenerator.net/instance/31774265/tealc-indeed), it is.
 
-In what follows, we wish to present our tele-**vision** 🖥 and a few of our **principles** that form the foundation of our public operation.
+In what follows, we wish to present our tele-**vision** 🖥 and a few of our **principles** that form the foundation of our public operations and activities.
 
 
 ### Our vision and principles
 
-Every serious enterprise should clearly state its *tele*-vision. So, let's do it.
+Every serious enterprise should clearly state its vision. So, here it is.
 *For us this is: by making top-quality software, to better the world (at least by a small bit) while doing no harm (as little as possible).*
 Sounds familiar, huh? Yes, so let's be a bit more concrete.
 
@@ -51,7 +51,7 @@ Some more examples of the consequences of the "respect" principle:
 
 Our next principle, extends the respect from the people also to the environment, the nature 🌿, the galaxy 🪐, and all the things around us.
 
-> Apply **sustainable computing**.
+> Apply **sustainable computing** principles.
 
 For us, this means that our goal is to make quality apps that are reusable, environment-friendly, optimized for resource usage, etc.
 As above, we state some examples of more concrete directions
@@ -62,7 +62,7 @@ As above, we state some examples of more concrete directions
 Finally, our last principle talks about our way of doing things
 > Use **lean design and engineering**.
 
-This is the principle of minimal interference and minimal action. Do just enough to get the job done **well**.
+This is the principle of minimal interference and minimal action while doing just enough to get the job **well done**.
 Some examples:
 * design intuitive and easy-to-use user interface
 * provide a smooth user experience.
@@ -72,8 +72,8 @@ Some examples:
 
 Currently, TopAppField is mostly a solo endaveour, but of course, with an occasional help of a few friends.
 Our work includes everything from app development, website design, marketing, and many other activities yet to learn.
-Fortunately, We have our daily jobs for our living.
-Nevertheless, we would consider a success if in the future somebody could be fully employed to work on our projects.
+(Un-)fortunately, we have our daily jobs for our living.
+Nevertheless, we would consider a success if in the future somebody (not necessarily me) could be fully employed to work on our projects.
 
 If you wish to contact us, you may write an email to [info@topappfield.com](mailto:info@topappfield.com?subject=Info).
 
