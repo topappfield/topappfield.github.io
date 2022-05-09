@@ -6,27 +6,21 @@
 
 
 {% block header %}
-<div class="py-5"></div>
+<div class="py-4"></div>
 <header class="py-3">
 	<article class="container p-5 w-75 text-center top-header border rounded">
 		<img src="{{ section.path }}icon.png" class="w-15 p-1 border rounded-circle border-success" alt="Count On Me">
 		<h1 class="fs-1 mt-3 mb-1 top-header">Count On Me</h1>
-		<h2 class="fs-4 fw-light text-tracked">A versatile counter app with many options, advanced features, statistics, and various methods of counting.</h2>
+		<h2 class="fs-4 fw-light text-tracked">A versatile tally counter app with many options, advanced features, statistics, various methods of counting, and feedback effects.</h2>
+		<br>
+		<img class="w-100 img-fluid" src="/countonme/banner.png">	
 	</article>
 </header>
 {% endblock header %}
 
 
 {% block main %}
-<div class="py-5"></div>
-<section class="py-5">
-	<article class="container text-center">
-		<img class="w-100 img-fluid" src="/countonme/banner.png">	
-	</article>
-	<div class="py-5"></div>
-</section>
-
-
+<div class="py-4"></div>
 <section class="py-5 bg-warning bg-opacity-10">
 	<div class="py-2"></div>
 	<article class="container">
@@ -92,10 +86,13 @@
 
 
 <section class="py-5 bg-warning bg-opacity-10">
+	<div class="py-2"></div>
 	<article class="container">
-		<h5>A counter app with many options, advanced features, statistics, and various methods of counting.</h5>
+		<h1 class="text-danger text-smallcaps text-tracked mb-3">Description</h1>
+		<div class="px-5 text-justify">
+		<h5>A versatile tally counter app with many options, advanced features, statistics, various methods of counting, and feedback effects.</h5>
 
-		<p>It helps you to improve your habits, yourself, and your life by creating multiple counters for anything you want: trips, meals, cars 🚘, people, planks, scores 🎯, points, coffees ☕️, or kisses 🥰. Count On Me Counter app includes advanced features such as sound effects, a large set of icons, color swatches, flash effects, vibration feedback, shake detection as well as extensive counter statistics, and visualizations.</p>
+		<p">It helps you to improve your habits, yourself, and your life by creating multiple counters for anything you want: trips, meals, cars 🚘, people, planks, scores 🎯, points, coffees ☕️, or kisses 🥰. Count On Me app includes advanced features such as sound effects, a large set of icons, color swatches, flash effects, vibration feedback, shake detection as well as extensive counter statistics, and visualizations.</p>
 
 		<p>Your counter can be triggered via various actions such as tapping👆and shaking 👋 while providing various visual and audio effects such as the screen or light flash, vibration or sound effects, etc.</p>
 
@@ -114,6 +111,19 @@
 		<p>Most of the features are available in the free version, but with the premium version, you get even more icons, sound effects, and an unlimited number of counters as well as the satisfaction that you support good software. Thanks!</p>
 
 		<p>Enjoy counting!</p>
+		</div>
+	</article>
+</section>
+
+
+<section class="py-5">
+	<div class="py-2"></div>
+	<article class="container">
+		<h1 class="text-danger text-smallcaps text-tracked mb-3">Posts and resources</h1>
+		<ul>
+			<li/>Use case: <a href="/countonme/use-hydration">Stay hydrated with the Count On Me app</a>
+			<li/><a href="/countonme/privacy-policy">Count On Me Privacy Policy</a>
+		</ul>
 	</article>
 </section>
 
