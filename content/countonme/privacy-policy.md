@@ -1,6 +1,10 @@
 +++
-title = "Count On Me Privacy Policy"
 template = "page.html"
+title = "Count On Me Privacy Policy"
+description = "Count On Me Privacy Policy"
+
+[extra]
+keywords = "Count On Me, counter, count, tally, app, ad-free, free, premium, freemium, privacy, policy, services, data, sovereignty"
 +++
 
 # *Count On Me* Privacy Policy

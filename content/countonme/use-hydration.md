@@ -1,6 +1,10 @@
 +++
-title = "Stay hydrated with the Count On Me app"
 template = "page.html"
+title = "Stay hydrated with the Count On Me app"
+description = "Stay hydrated with the Count On Me app"
+
+[extra]
+keywords = "counter, count, tally, app, habit, sport, fitness, water, hydration, health, ad-free, report, statistics"
 +++
 
 # Stay hydrated with the Count On Me app
