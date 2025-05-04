@@ -1,7 +1,7 @@
 +++
 template = "section.html"
 title = "Narisatu"
-description = "Narisatu: simple game with complex solution"
+description = "Narisatu: simple puzzle with a complex solution"
 
 [extra]
 keywords = "non-arithmetic saturated subset"
