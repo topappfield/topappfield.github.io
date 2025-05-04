@@ -32,3 +32,7 @@ Most importantly:
 	motto='Flashlight Torcher app for Android OS is easily available for you to install in the Google Play store. ',
 	appid='torcher'
 ) }}
+
+## Resources
+
+You can also read [privacy policy](privacy-policy) if you really want to.

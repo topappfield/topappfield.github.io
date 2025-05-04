@@ -18,7 +18,7 @@ Trying to remember, what is an arithmetic sequence. Here, let us consider one ex
 
 The difference between two consecutive elements is always the same: 3 = 5 - 2 = 8 - 5 = 11 -8 etc. Just a simple puzzle, where you have to continue the sequence, right? No, Narisatu is much harder. It requires that there is no arithmetic sequence, no matter which three of the selected numbers you check.
 
-Check out a bit more comprehensive [tutorial](/narisatu/tutorial) on how to play Narisatu.
+Check out a bit more comprehensive [tutorial](tutorial) on how to play Narisatu.
 
 ## Screenshots
 
@@ -26,6 +26,10 @@ Check out a bit more comprehensive [tutorial](/narisatu/tutorial) on how to play
 
 ## Play
 
-You can play [Narisatu online](/narisatu/web/) or install a mobile app for Android phones.
+You can play [Narisatu online](web/) or install a mobile app for Android phones.
 
 {{ playstore(appid='Narisatu', question='Do you like puzzles?', motto='Narisatu is a simple puzzle with a complex solution.') }}
+
+## Resources
+
+You can also read [privacy policy](privacy-policy) if you really want to.
