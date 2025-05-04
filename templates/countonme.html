@@ -129,7 +129,11 @@
 
 
 <section class="py-5">
-{{ macros::install_countonme() }}
+{{ macros::install_playstore(
+	question='Want to count something?',
+	motto='Count On Me app for Android OS is easily available for you to install in the Google Play store.',
+	appid='CountOnMe')
+}}
 <div class="pb-5"></div>
 </section>
 {% endblock main %}

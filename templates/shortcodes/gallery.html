@@ -1,10 +1,10 @@
-<div>
-{% for asset in path -%}
+<div class="text-center">
+{% for asset in images -%}
   {%- if asset is matching("[.](jpg|png)$") -%}
-    {% set image = resize_image(path=asset, width=256, height=456) %}
+    {% set image = resize_image(path=path ~ asset, width=256, height=456) %}
     <a href="{{ get_url(path=asset) }}" target="_blank">
-      <img src="{{ image.url }}" />
+      <img src="{{ image.url }}" class="p-5"/>
     </a>
   {%- endif %}
 {%- endfor %}
-</div
+</div>

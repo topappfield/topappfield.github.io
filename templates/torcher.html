@@ -119,7 +119,11 @@
 
 
 <section class="py-5">
-{{ macros::install_torcher() }}
+{{ macros::install_playstore(
+	question='Want to torch a flashlight?',
+	motto='Flashlight Torcher app for Android OS is easily available for you to install in the Google Play store. ',
+	appid='torcher')
+}}
 <div class="pb-5"></div>
 </section>
 {% endblock main %}
