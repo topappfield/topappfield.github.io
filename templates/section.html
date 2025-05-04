@@ -1,0 +1,24 @@
+{% extends "_base.html" %}
+
+{% block navbar %}
+{{ macros::navbar() }}
+{% endblock navbar %}
+
+
+{% block header %}
+<div class="py-5"></div>
+<header class="py-3">
+	<article class="container p-5 w-75 text-center top-header border rounded">
+		<img src="{{ section.path }}icon.png" class="w-15 p-1 border rounded-circle border-success" alt="Narisatu">
+		<h1 class="fs-1 mt-3 mb-1 top-header">{{ section.extra.app_name }}</h1>
+		<h2 class="fs-4 fw-light text-tracked">{{ section.extra.app_motto }}</h2>
+	</article>
+</header>
+{% endblock header %}
+
+
+{% block main %}
+<main class="container p-5">
+	{{ section.content | safe }}
+</main>
+{% endblock main %}
